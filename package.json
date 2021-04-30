@@ -1,0 +1,20 @@
+{
+  "name": "mqtt-poc",
+  "version": "1.0.0",
+  "description": "MQTT poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mqtt",
+    "js",
+    "mosca"
+  ],
+  "author": "Nikhil Mahirrao",
+  "license": "ISC",
+  "dependencies": {
+    "mosca": "^2.8.3",
+    "mqtt": "^4.2.6"
+  }
+}
