@@ -22,12 +22,18 @@ hall.on("connect", () => {
   setTimeout(publishLight, 2000);
 });
 
+// Extra options
+var options = {
+  retain: true,
+  qos: 1, // Quality Of Service
+};
+
 // Publish temperature message
 function publishTemperature() {
   setInterval(() => {
     var message = 'Hall: Tempreture 35°C';
     console.log('Publish: ', message);
-    hall.publish(temperatureTopic, message);
+    hall.publish(temperatureTopic, message, options);
   }, 4000);
 }
 
